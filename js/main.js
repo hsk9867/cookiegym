@@ -4,6 +4,20 @@
     var body = document.body;
     var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+
+    // 인트로: 애니메이션이 끝나거나 클릭하면 제거
+    var intro = document.getElementById('intro');
+    if (intro) {
+        function endIntro() {
+            intro.classList.add('is-done');
+        }
+        intro.addEventListener('animationend', function (e) {
+            if (e.target === intro) endIntro();
+        });
+        intro.addEventListener('click', endIntro);
+        setTimeout(endIntro, 3600);
+    }
+
     // 헤더 스크롤 상태 (플로팅 CTA 노출)
     function onScroll() {
         body.classList.toggle('is-scroll', window.scrollY > 240);
