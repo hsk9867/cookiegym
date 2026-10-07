@@ -103,7 +103,7 @@
     navLinks.forEach(function (a) {
         navMap[a.getAttribute('data-nav')] = a;
     });
-    var sections = ['top', 'facility', 'pt', 'care', 'info'].map(function (id) {
+    var sections = ['top', 'facility', 'pt', 'info'].map(function (id) {
         return document.getElementById(id);
     }).filter(Boolean);
 

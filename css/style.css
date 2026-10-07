@@ -226,26 +226,6 @@ table { border-collapse: collapse; }
 .trainers .more a { display: flex; flex-direction: column; justify-content: center; height: 100%; padding: 26px 24px 28px; }
 .trainers .more strong { margin-top: 0; }
 .trainers .more span { display: inline-block; margin-top: 10px; color: var(--green); font-weight: 700; font-size: 14px; }
-
-/* ----------------------------------------------------------
-   04 운영
-   ---------------------------------------------------------- */
-.care { background: var(--green); color: #06130b; }
-.care .step-label { color: #06130b; }
-.care .step-label span { color: rgba(0,0,0,.25); }
-.care .sec-title em { color: #06130b; position: relative; }
-.care .sec-title em::after { content: ""; position: absolute; left: 0; right: 0; bottom: .06em; height: .14em; background: rgba(0,0,0,.18); z-index: -1; }
-.care .desc { color: #0f3a24; }
-.care-head { max-width: 760px; }
-.care-list { margin-top: 56px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
-.care-list li { padding: 30px 30px 32px; border-radius: 20px; background: rgba(0,0,0,.14); }
-.care-list .num { font-family: var(--display); font-size: 30px; color: rgba(0,0,0,.4); letter-spacing: .04em; }
-.care-list strong { display: block; margin-top: 8px; font-size: 22px; font-weight: 800; }
-.care-list p { margin-top: 10px; font-size: 15px; line-height: 1.7; color: #0f3a24; }
-.care-quote { margin-top: 56px; padding: 36px 40px; border-radius: 20px; background: #06130b; color: #e9f7ee; }
-.care-quote p { font-size: clamp(17px, 1.8vw, 22px); font-weight: 600; line-height: 1.6; }
-.care-quote cite { display: block; margin-top: 16px; font-style: normal; color: var(--green); font-weight: 700; font-size: 14px; }
-
 /* ----------------------------------------------------------
    갤러리
    ---------------------------------------------------------- */
@@ -411,7 +391,6 @@ body:not(.is-scroll) .float-cta { transform: translate(-50%, 120%); opacity: 0; 
     .official li { grid-template-columns: 72px 1fr; padding: 18px; }
     .official-img { width: 72px; height: 72px; }
     .official-img img { width: 58px; height: 58px; }
-    .care-quote { padding: 26px 22px; }
     .cta-card { padding: 32px 22px 30px; }
     .faq-list summary { font-size: 16px; padding-right: 40px; }
     .float-cta { left: 16px; right: 16px; transform: none; }
