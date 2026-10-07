@@ -23,14 +23,7 @@
 <a class="skip" href="#ct">본문 바로가기</a>
 <svg width="0" height="0" aria-hidden="true" style="position:absolute">
     <filter id="keyblack" color-interpolation-filters="sRGB">
-        <feComponentTransfer in="SourceGraphic" result="boost">
-            <feFuncR type="linear" slope="1.8" intercept="-0.25"/>
-            <feFuncG type="linear" slope="1.8" intercept="-0.25"/>
-            <feFuncB type="linear" slope="1.8" intercept="-0.25"/>
-        </feComponentTransfer>
-        <feColorMatrix in="boost" type="luminanceToAlpha" result="lum"/>
-        <feComponentTransfer in="lum" result="alpha"><feFuncA type="linear" slope="2.4"/></feComponentTransfer>
-        <feComposite in="boost" in2="alpha" operator="in"/>
+        <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  1.3 0 1.3 0 -1.1"/>
     </filter>
 </svg>
 
@@ -74,10 +67,8 @@
 <section class="hero" id="top">
     <div class="hero-bg"><img src="img/hero.jpg" alt="" fetchpriority="high"></div>
     <div class="hero-inner">
-        <p class="hero-eyebrow" data-aos>OSONG · CHEONGJU · SEJONG</p>
-        <p class="hero-en" data-aos data-aos-delay="80">PREMIUM FITNESS</p>
-        <h2 class="hero-logo" data-aos data-aos-delay="160"><img src="img/logo.png" alt="COOKIE GYM" fetchpriority="high"><span class="shine" aria-hidden="true"></span></h2>
-        <p class="hero-sub" data-aos data-aos-delay="240">세계적 명품 수입기구 풀세팅 · 오송 · 청주 · 세종</p>
+        <p class="hero-eyebrow" data-aos>PREMIUM FITNESS</p>
+        <h2 class="hero-logo" data-aos data-aos-delay="160"><img src="img/logo.png" alt="COOKIE GYM" fetchpriority="high"></h2>
         <div class="hero-actions" data-aos data-aos-delay="320">
             <a class="btn btn-lg btn-ghost" href="tel:0507-1371-9224">전화 상담</a>
             <a class="btn btn-lg btn-primary" href="https://m.booking.naver.com/booking/13/bizes/867144" target="_blank" rel="noopener">네이버 예약</a>
