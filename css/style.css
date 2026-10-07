@@ -127,7 +127,7 @@ table { border-collapse: collapse; }
 .hero-en { font-family: var(--display); font-size: clamp(48px, 7.4vw, 104px); line-height: .95; letter-spacing: .05em; color: #fff; margin-top: 4px; }
 .hero-logo { width: min(440px, 88%); margin: 6px 0 0 -6px; line-height: 0; }
 .hero-logo img { width: 100%; height: auto; filter: url(#keyblack); }
-.hero-actions { display: flex; gap: 12px; margin-top: 32px; flex-wrap: wrap; }
+.hero-actions { display: flex; gap: 12px; margin-top: 40px; flex-wrap: wrap; }
 .hero-scroll { position: absolute; left: 50%; bottom: -40px; transform: translateX(-50%); display: flex; flex-direction: column; gap: 4px; opacity: .6; }
 .hero-scroll i { width: 12px; height: 12px; border-right: 2px solid #fff; border-bottom: 2px solid #fff; transform: rotate(45deg); animation: chev 1.6s infinite; }
 .hero-scroll i:nth-child(2) { animation-delay: .2s; }
@@ -164,17 +164,6 @@ table { border-collapse: collapse; }
 .wordmark { font-family: var(--display); font-size: 36px; letter-spacing: .06em; line-height: 1; color: #fff; opacity: .9; white-space: nowrap; }
 @keyframes marquee { to { transform: translateX(-50%); } }
 
-/* 숫자 */
-.stats {
-    margin-top: 36px; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr));
-    background: var(--surface); border: 1px solid var(--line); border-radius: 20px; overflow: hidden;
-}
-.stats li { padding: 28px 12px; text-align: center; border-left: 1px solid var(--line); }
-.hero-stats { max-width: 980px; background: rgba(20,23,21,.72); backdrop-filter: blur(10px); border-color: rgba(255,255,255,.1); }
-.stats li:first-child { border-left: 0; }
-.stats strong { display: block; font-size: clamp(28px, 3vw, 40px); font-weight: 800; color: var(--green); letter-spacing: -0.03em; line-height: 1.1; }
-.stats strong i { font-style: normal; font-size: .5em; margin-left: 3px; color: #cfd6d1; }
-.stats li > span { display: block; margin-top: 10px; font-size: 14px; color: var(--muted); }
 
 /* ----------------------------------------------------------
    피처 섹션 (01 기구 / 02 시설 / 03 PT)
@@ -378,10 +367,6 @@ body:not(.is-scroll) .float-cta { transform: translate(-50%, 120%); opacity: 0; 
    ---------------------------------------------------------- */
 @media (max-width: 1100px) {
     .brands { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-    .stats { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-    .stats li { border-left: 0; border-top: 1px solid var(--line); }
-    .stats li:nth-child(-n+3) { border-top: 0; }
-    .stats li:not(:nth-child(3n+1)) { border-left: 1px solid var(--line); }
     .trainers { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     .gnb ul { gap: 20px; }
 }
@@ -428,12 +413,6 @@ body:not(.is-scroll) .float-cta { transform: translate(-50%, 120%); opacity: 0; 
     .hero-badge { font-size: 13px; gap: 8px; }
     .hero-actions .btn { flex: 1; padding: 0 16px; }
     .bubbles li { font-size: 15px; padding: 13px 16px; gap: 10px; }
-    .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .stats li { padding: 26px 10px; }
-    .stats li:nth-child(-n+3) { border-top: 1px solid var(--line); }
-    .stats li:nth-child(-n+2) { border-top: 0; }
-    .stats li:not(:nth-child(3n+1)) { border-left: 0; }
-    .stats li:nth-child(2n) { border-left: 1px solid var(--line); }
     .steps, .cards, .trainers, .photo-row { grid-template-columns: 1fr; }
     .brands { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     .official li { grid-template-columns: 72px 1fr; padding: 18px; }
