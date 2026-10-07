@@ -372,8 +372,12 @@ body:not(.is-scroll) .float-cta { transform: translate(-50%, 120%); opacity: 0; 
     .gallery-track { padding-left: 16px; padding-right: 16px; }
     .hd-inner, .subnav-inner { width: calc(100% - 32px); }
     .subnav a { padding: 0 10px; font-size: 13px; }
-    .hero { padding-bottom: 48px; padding-top: calc(var(--hd-h) + var(--sub-h) + 40px); }
-    .hero-logo { width: 86%; margin-left: -4px; }
+    .hero { min-height: 82svh; padding-top: calc(var(--hd-h) + var(--sub-h) + 72px); padding-bottom: 96px; }
+    .hero-eyebrow { margin-bottom: 14px; }
+    .hero-actions { margin-top: 48px; gap: 10px; }
+    .hero-inner { text-align: center; }
+    .hero-logo { width: 84%; margin: 10px auto 0; }
+    .hero-actions { justify-content: center; }
     .marquee-track { gap: 44px; animation-duration: 36s; }
     .marquee-track img { height: 32px; max-width: 140px; }
     .marquee-track .tall img { height: 42px; }
